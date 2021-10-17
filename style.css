@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: rgb(56, 56, 56);
+}
+
+#bandeauMessage {
+    display: none;
+    clear: both;
+    width: 100%;
+}
+
+#message {
+    width: 100%;
+    border: 0;
+    height: 30px;
+}
+
+div.touche{
+    width: calc(100%/2);
+    height: calc(100%/2);
+    filter: contrast(50%);
+    transition: filter .3s;
+}
+
+div.touche:hover {
+    cursor: pointer;
+    filter: contrast(100%);
+}
+
+#couleur1 {
+    background-color: #03cf03;
+}
+
+#couleur2 {
+    background-color: #cc0606;
+}
+
+#couleur3 {
+    background-color: #dbdb00;
+}
+
+#couleur4 {
+    background-color: #0000cc;
+}
+
+.simon-wrapper{
+    width: 60%;
+    padding-top: 60%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.simon{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.simon::after{
+    content: "";
+    top: 50%;
+    left: 50%;
+    background: rgb(56, 56, 56);
+    width: 40%;
+    height: 40%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+}
+
