@@ -48,29 +48,29 @@ body {
 div.touche {
   width: calc(100% / 2);
   height: calc(100% / 2);
-  filter: contrast(50%);
-  transition: filter 0.3s;
+  /* filter: contrast(50%);
+  transition: filter 0.3s; */
 }
 
-div.touche:hover {
+/* div.touche:hover {
   cursor: pointer;
   filter: contrast(100%);
-}
+} */
 
 #couleur1 {
-  background-color: #03cf03;
+  background-color: #5f0000;
 }
 
 #couleur2 {
-  background-color: #cc0606;
+  background-color: #005f00;
 }
 
 #couleur3 {
-  background-color: #dbdb00;
+  background-color: #00005f;
 }
 
 #couleur4 {
-  background-color: #0000cc;
+  background-color: #5f5f00;
 }
 
 .simon-wrapper {
